@@ -1,1 +1,39 @@
-ripple.css
+.wave-effect {
+    position: relative;
+    overflow: hidden
+}
+.ripple {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    position: absolute;
+    opacity: 1
+}
+.rippleEffect {
+    animation: rippleDrop .4s linear
+}
+@-moz-keyframes rippleDrop {
+    100% {
+        transform: scale(2);
+        opacity: 0
+    }
+}
+@-webkit-keyframes rippleDrop {
+    100% {
+        transform: scale(2);
+        opacity: 0
+    }
+}
+@-o-keyframes rippleDrop {
+    100% {
+        transform: scale(2);
+        opacity: 0
+    }
+}
+@keyframes rippleDrop {
+    100% {
+        transform: scale(2);
+        opacity: 0
+    }
